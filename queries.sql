@@ -1,3 +1,5 @@
+-- Generating the final report card
+     
 SELECT s.name, s.class,
        STUFF((
            SELECT ', ' + g.subject + ': ' + CAST(g.marks_obtained AS VARCHAR(10)) + ' (' 
